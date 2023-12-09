@@ -10,9 +10,9 @@ mask = Image.open('img_0_mask.png')
 def contrast_augmentation(src_image: Image, reduce_contrast: bool = False, output_k: int = 3) -> list:
     """
     Generates images with different contrast factor
-    :param src_image: PIL.Image type image
+    :param src_image: PIL.Image type of image
     :param reduce_contrast: If func has to generate images with contrast less than original (False must be better)
-    :param output_k: How much photos must be generated
+    :param output_k: the number of generating images
     :return: List of PIL.Image variables with different contrasts
     """
     result = list()
@@ -30,7 +30,7 @@ def rotation_augmentation(src_image: Image, torch_rotation: bool = False, output
     Generates images with different angle rotation
     :param src_image: PIL.Image type image
     :param torch_rotation: Which method of rotating to use, PIL method as default (torch method is not done yet)
-    :param output_k: How much photos must be generated
+    :param output_k: the number of generating images
     :return: List of PIL.Image / torch (depends on method) variables with different rotation
     """
     result = list()
