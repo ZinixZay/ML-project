@@ -7,7 +7,7 @@ src = Image.open('img_0.png')
 mask = Image.open('img_0_mask.png')
 
 
-def contrast_augmentation(src_image, reduce_contrast: bool = False, output_k: int = 3) -> list:
+def contrast_augmentation(src_image: Image, reduce_contrast: bool = False, output_k: int = 3) -> list:
     """
     Generates images with different contrast factor
     :param src_image: PIL.Image type image
